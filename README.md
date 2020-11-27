@@ -1,8 +1,21 @@
 # navier_stokes_solver
-Finite differences solver for incompressible, viscous and time-varying Navier-Stokes equations
+Finite differences solver for Navier-Stokes equations
 
-Tested several solver for linear systems of the form Ax=b
-including Successive-over-Relaxation, Conjugate Gradients and Mutligrid
+Model assumptions:
+- incompressible,
+- viscous,
+- time-varying,
+- two-dimensional.
 
-Applied to canonical flows
-including Backwards-facing step, Sudden Converging-Diverging Channel, Flow around a Square Cylinder and Lid-Driven Cavity
+
+
+Tested several solver for linear systems of the form Ax=b, including:
+- Successive-over-Relaxation,
+- Conjugate Gradients and
+- Mutligrid (V- and W-cycle)
+
+Applied to canonical flows, including:
+- Backwards-facing step,
+- Sudden Converging-Diverging Channel,
+- Flow around a Square Cylinder and
+- Lid-Driven Cavity
