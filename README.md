@@ -3,7 +3,6 @@ Finite differences solver for Navier-Stokes equations
 
 Model assumptions:
 - incompressible,
-- viscous,
 - time-varying,
 - two-dimensional.
 
