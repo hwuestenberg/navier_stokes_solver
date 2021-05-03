@@ -1,5 +1,5 @@
 # navier_stokes_solver
-Finite differences solver for Navier-Stokes equations
+Finite differences solver for 2D Navier-Stokes equations
 
 Model assumptions:
 - incompressible,
