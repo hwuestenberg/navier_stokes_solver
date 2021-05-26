@@ -1,0 +1,13 @@
+nssolver
+======
+
+A simple solver for 2D Navier-Stokes flow in standard test cases.
+Incompressible and unsteady flow.
+Includes Lid-driven cavity, backwards-facing step and others
+
+Tested with Pyhton 3.8 only.
+
+Installation
+------------
+
+    python setup.py install
