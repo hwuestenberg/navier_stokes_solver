@@ -3,7 +3,7 @@ Finite differences solver for 2D Navier-Stokes equations
 
 Model assumptions:
 - incompressible,
-- time-varying,
+- unsteady,
 - two-dimensional.
 
 
