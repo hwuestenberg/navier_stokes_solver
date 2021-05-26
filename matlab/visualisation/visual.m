@@ -148,24 +148,29 @@ end
     % Velocity field with quiver, Pressure levels with contour and
     % Streamlines
         case 2
-            figPsi = subplot(1,2,1);
-            contour(Psi')
+%             figPsi = subplot(1,2,1);
+            figPsi = contour(Psi');
             hold on
             quiver(2:imax,2:jmax,U(2:imax,2:jmax)',V(2:imax,2:jmax)')
-            title('Streamlines')
+            
+            % Add boundary geometry
+%             block = polyshape([15 15 18 18],[11 8 8 11]);
+%             plot(block)
+            
+            title('Driven Cavity')
             xlabel('x')
             ylabel('y')            
             hold off
             
-            figP = subplot(1,2,2);
-            contour(P')
-            title('Pressure levels')
-            xlabel('x')
-            ylabel('y')
-            hold on
-            quiver(2:imax,2:jmax,U(2:imax,2:jmax)',V(2:imax,2:jmax)')
-            colorbar
-            hold off
+%             figP = subplot(1,2,2);
+%             contour(P')
+%             title('Pressure levels')
+%             xlabel('x')
+%             ylabel('y')
+%             hold on
+%             quiver(2:imax,2:jmax,U(2:imax,2:jmax)',V(2:imax,2:jmax)')
+%             colorbar
+%             hold off
     
     % Velocity field with quiver, Streamlines and Vorticity with contour
         case 3
@@ -197,6 +202,7 @@ end
     elseif problem == 3
         problem_str = 'FlowAboveStair_';
     end
-    str = strcat('results/',problem_str,num2str(imax-1),'x',num2str(jmax-1),'_',num2str(round(1000*rand(1),0)));
-    print(str,'-dpng');
+%     cd ./results/
+%     str = strcat(problem_str,num2str(imax-1),'x',num2str(jmax-1),'_',num2str(round(1000*rand(1),0)));
+%     print(str,'-dpng');
 end

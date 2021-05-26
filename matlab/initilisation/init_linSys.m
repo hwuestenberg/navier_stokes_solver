@@ -5,7 +5,7 @@
 % Created on 12/06/2018 with Matlab R2017b
 % by Henrik Wüstenberg,Rushit Kansara, Sarvesh Vishishth
 %######################################################
-function K2D = init_linSys(imax,jmax,dely,delx)
+function K2D = init_linSys(imax,jmax,delx,dely)
     % Set up a linear system of equations
     vy = sparse([2 -1 zeros(1,jmax-3)]);    % -3 for both numbers and the +1 incorporated in jmax
     K1Dy = (1/dely^2)*toeplitz(vy);         % Create Toeplitz matrix for one dimension
